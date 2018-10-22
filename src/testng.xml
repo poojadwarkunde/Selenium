@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Half Ebay Test Automation Suite">
+	<test name="Half Ebay Feature test ">
+		<classes>
+			
+			<class name="com.testng.practice.GoogleTest"></class>
+			<class name="com.testng.practice.GoogleTitleTest"></class>
+			<class name="com.testng.practice.TestNGFeatures"></class>
+		</classes>
+	</test>
+</suite>
