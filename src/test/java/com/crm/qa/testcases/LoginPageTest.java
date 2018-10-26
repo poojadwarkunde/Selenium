@@ -24,20 +24,20 @@ public class LoginPageTest extends TestBase{
 	    loginPage = new LoginPage();
 	}
 	
-//	@Test(priority =1)
-//	public void loginPageTitleTest() {
-//		String title = loginPage.validateLoginPageTitle();
-//		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
-//	}
-//	
-//	@Test(priority =2)
-//	public void crmLogoImgTest() {
-//		boolean flag = loginPage.validateCRMImage();
-//		Assert.assertTrue(flag);
-//	}
-//	
+	@Test(priority =1)
+	public void loginPageTitleTest() {
+		String title = loginPage.validateLoginPageTitle();
+		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
+	}
+	
+	@Test(priority =2)
+	public void crmLogoImgTest() {
+		boolean flag = loginPage.validateCRMImage();
+		Assert.assertTrue(flag);
+	}
+	
 	@Test(priority =3)
-	public void loginTest() {
+	public void loginTest() throws InterruptedException {
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	@AfterMethod

@@ -32,10 +32,12 @@ public class LoginPage extends TestBase {
 		return crmlogo.isDisplayed();
 	}
 	
-	public HomePage login(String un, String pwd) {
+	public HomePage login(String un, String pwd) throws InterruptedException {
 		username.sendKeys(un);
 		password.sendKeys(pwd);
+		Thread.sleep(3000);
 		loginbtn.click();
+		Thread.sleep(3000);
 		return new HomePage();
 	}
 	
